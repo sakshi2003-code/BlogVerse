@@ -9,14 +9,14 @@ Blog Website, a platform where you can share, read, and explore a wide variety o
 - **Category Filtering**: Explore blogs based on categories or tags.  
 - **Rich Text Editor**: Write engaging content with formatting options.  
 - **Authentication**: Secure user login and registration.  
-- **Dark Mode**: Toggle between light and dark themes for better readability.  
+ 
 
 ## Tech Stack  
 - **Frontend**: React, React Router, Redux (for state management)  
 - **Styling**: CSS, SCSS, or Tailwind CSS  
-- **Backend**: Node.js, Express.js (if applicable)  
-- **Database**: MongoDB (or Firebase for real-time updates)  
-- **Deployment**: Vercel, Netlify, or AWS  
+- **Backend**: Appwrite
+- **Database**: Appwrite
+- **Deployment**: localhost 
 
 ## Installation  
 
