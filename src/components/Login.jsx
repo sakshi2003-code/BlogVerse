@@ -36,77 +36,68 @@ function Login() {
         }
     }
   return (
-    <div className='flex items-center justify-center :w-full'>
-                    <div className={`mx-auto w-full
-                    max-w-lg bg-gray-100 rounded-xl
-                    p-10 border border-black/10 `}>
-                                    <div className='mb-2 flex justify-center'>
-                                                <span className='inline-block w-full
-                                                max-w-[100px]'>
-                                                <Logo width='100%'/>
-                                                </span>
-                                    </div>
-                         <h2 className='text-center text-2xl font-bold
-                         leading-tight'> Sign in to your account</h2>
-
-                         <p className='mt-2 text-center
-                         text-base text-black/60'>
-                           Don&apos;t have any account?&nbsp;
-                            <Link
-                            to="/signup"
-                            className='font-medium text-primary
-                            transition-all
-                            duration-200
-                            hover:underline'>Sign Up
-                            </Link>
-                         </p>
-                         {error && <p className='
-                         text-red-600 mt-8 text-center
-                         '>{error}</p> }
-
-                         {/* form */}
-                        {/* form jb b use hoga handlesubmit hi use hoga 
-                        kyuki handlesubmit jo event return krta h
-                         uski state register khud manage krta h hme 
-                         manage krne ki jarurat nhi h*/}
-                         {/* isme register ko ese hi spread krke pass krwana compulsory h 
-                         iska sytax hi esa h
-                         kyuki ye override kr dega values wrna or iske ander
-                         value uniue name hi pass krte hn ye important h or hm ek
-                         object pass krte hn jisme bht sare options pass kr skte hn*/}
-                         <form onSubmit={handleSubmit(login)} className='mt-8'>
-                            <div className='space-y-5'>
-                                <Input
-                                label="Email:"
-                                placeholder="Enter your email "
-                                type="email"
-                                {...register("email",{
-                                    required:true,
-                                    // regex pattern
-                                    validate: {
-                                        matchPatern: (value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
-                                        "Email address must be a valid address",
-                                    }
-                                })}/>
-                               
-                                <Input
-                                label="Password:"
-                                type="password"
-                                placeholder="Enter your password"
-                                {...register("password",{
-                                    required:true,
-                                })
-
-                                }/>
-                               <Button
-                               type="submit"
-                               className="w-full">Sign In</Button>
-                            </div>
-
-                         </form>
-                    </div>
-      
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100">
+    <div className="w-full max-w-md bg-white shadow-xl rounded-3xl p-10 border border-gray-200">
+      <div className="mb-6 flex justify-center">
+        <span className="block w-24">
+          <Logo width="100%" />
+        </span>
+      </div>
+  
+      <h2 className="text-center text-3xl font-extrabold text-gray-800">
+        Sign in to your account
+      </h2>
+  
+      <p className="mt-4 text-center text-sm text-gray-600">
+        Don&apos;t have an account?&nbsp;
+        <Link
+          to="/signup"
+          className="font-medium text-indigo-600 hover:text-indigo-800 transition-all duration-300"
+        >
+          Sign Up
+        </Link>
+      </p>
+  
+      {error && <p className="text-red-600 mt-4 text-center">{error}</p>}
+  
+      <form onSubmit={handleSubmit(login)} className="mt-8 space-y-6">
+        <div className="space-y-4">
+          <Input
+            label="Email:"
+            placeholder="Enter your email"
+            type="email"
+            {...register("email", {
+              required: true,
+              validate: {
+                matchPatern: (value) =>
+                  /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+                  "Email address must be a valid address",
+              },
+            })}
+          />
+  
+          <Input
+            label="Password:"
+            type="password"
+            placeholder="Enter your password"
+            {...register("password", {
+              required: true,
+            })}
+          />
+  
+          <Button
+            type="submit"
+            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-all duration-200"
+          >
+            Sign In
+          </Button>
+        </div>
+      </form>
     </div>
+  </div>
+  
+  
+  
   )
 }
 
