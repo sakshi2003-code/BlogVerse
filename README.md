@@ -72,5 +72,5 @@ If you find BlogVerse useful, please ⭐ the repository!
 *Created by Sakshi Bijalwan*
 [GitHub Profile](https://github.com/sakshi2003-code) | [LinkedIn](https://www.linkedin.com/in/sakshi-bijalwan/)
 
-`
+
 
