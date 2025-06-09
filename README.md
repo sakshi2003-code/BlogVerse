@@ -1,3 +1,5 @@
+
+
 # BlogVerse
 
 BlogVerse is a modern blogging platform designed to provide users with a seamless and engaging experience for creating, sharing, and discovering blog content. Built with scalability and user experience in mind, BlogVerse leverages **Appwrite** as a backend service to handle authentication, database, and storage, simplifying backend management.
@@ -15,7 +17,7 @@ BlogVerse is a modern blogging platform designed to provide users with a seamles
 
 - Frontend: React.js, Tailwind CSS (or your UI framework)  
 - Backend: Appwrite (Authentication, Database, Storage)  
- 
+- Deployment: Vercel/Netlify/DigitalOcean (as applicable)  
 
 ## 📥 Installation
 
@@ -23,7 +25,7 @@ BlogVerse is a modern blogging platform designed to provide users with a seamles
    ```bash
    git clone https://github.com/sakshi2003-code/BlogVerse.git
    cd BlogVerse
-````
+
 
 2. Install frontend dependencies:
 
@@ -71,6 +73,5 @@ If you find BlogVerse useful, please ⭐ the repository!
 
 *Created by Sakshi Bijalwan*
 [GitHub Profile](https://github.com/sakshi2003-code) | [LinkedIn](https://www.linkedin.com/in/sakshi-bijalwan/)
-
 
 
